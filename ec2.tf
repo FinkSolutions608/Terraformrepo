@@ -3,7 +3,7 @@
 
 # Create an EC2 instance in the first subnet
 resource "aws_instance" "web-frontend" {
-  ami                         = "ami-0501f3dfc19235d5f" # Win16
+  ami                         = "ami-0501f3dfc19235d5f" # AmazonLinux2
   instance_type               = "t3.micro"
   subnet_id                   = aws_subnet.subnet_1.id
   associate_public_ip_address = true
